@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AppleSDGothicNeo.ttc">
+            <string>AppleSDGothicNeo-Bold</string>
+            <string>AppleSDGothicNeo-Light</string>
+            <string>AppleSDGothicNeo-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--CryptoATM-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="CryptoATM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CryptoATM" id="1J1-Xm-mkg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1471" y="-730"/>
+        </scene>
+        <!--CryptoATM-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController extendedLayoutIncludesOpaqueBars="YES" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="CryptoATM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsy-aJ-Q5X">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dsy-aJ-Q5X" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="JNc-HT-KeI"/>
+                            <constraint firstAttribute="bottom" secondItem="dsy-aJ-Q5X" secondAttribute="bottom" id="Ls4-39-0hP"/>
+                            <constraint firstItem="dsy-aJ-Q5X" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="ar1-lL-Z7d"/>
+                            <constraint firstItem="dsy-aJ-Q5X" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="o4V-oa-bvz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CryptoATM" id="dZW-lw-JKl"/>
+                    <connections>
+                        <outlet property="webView" destination="dsy-aJ-Q5X" id="RYb-Ao-D3t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1469.5999999999999" y="-0.44977511244377816"/>
+        </scene>
+        <!--CryptoATM-->
+        <scene sceneID="LmB-SW-VpC">
+            <objects>
+                <viewController id="nBy-mk-7nC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vbu-Nj-87C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please consider donating to help keep this app free, ad free, and open source!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCg-47-26b">
+                                <rect key="frame" x="16" y="74" width="343" height="31.5"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="13"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66K-DH-RVL">
+                                <rect key="frame" x="172.5" y="128.5" width="30.5" height="21"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1LzfAMnWLYikHx8d9UCWbLzxdkX4dHzZji" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkc-Wq-I8v">
+                                <rect key="frame" x="16" y="153.5" width="343" height="17"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="14"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ETH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlt-Yn-Tlf">
+                                <rect key="frame" x="172" y="193.5" width="31.5" height="21"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0xD2bc3fe8429d56fE17e5c1487c10B79780156823" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lau-ei-Qbl">
+                                <rect key="frame" x="16" y="218.5" width="343" height="17"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="14"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LTC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uY-PC-Sfp">
+                                <rect key="frame" x="172.5" y="258" width="29" height="21"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LagaHBXdHL6yh9GqvfxjRVmSoraDnThk82" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7YO-M2-TTG">
+                                <rect key="frame" x="16" y="283" width="343" height="17"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="14"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="g83-eY-3Zp" firstAttribute="trailing" secondItem="7YO-M2-TTG" secondAttribute="trailing" constant="16" id="03f-Yb-WkR"/>
+                            <constraint firstItem="g83-eY-3Zp" firstAttribute="trailing" secondItem="bkc-Wq-I8v" secondAttribute="trailing" constant="16" id="5CM-1Q-ETE"/>
+                            <constraint firstItem="66K-DH-RVL" firstAttribute="top" secondItem="RCg-47-26b" secondAttribute="bottom" constant="23" id="6GM-Y5-ZHf"/>
+                            <constraint firstItem="RCg-47-26b" firstAttribute="leading" secondItem="g83-eY-3Zp" secondAttribute="leading" constant="16" id="BRh-WH-PWw"/>
+                            <constraint firstItem="7YO-M2-TTG" firstAttribute="top" secondItem="6uY-PC-Sfp" secondAttribute="bottom" constant="4" id="CT9-au-Jb9"/>
+                            <constraint firstItem="lau-ei-Qbl" firstAttribute="top" secondItem="xlt-Yn-Tlf" secondAttribute="bottom" constant="4" id="El3-Gx-uI9"/>
+                            <constraint firstItem="g83-eY-3Zp" firstAttribute="trailing" secondItem="RCg-47-26b" secondAttribute="trailing" constant="16" id="Py9-fr-utJ"/>
+                            <constraint firstItem="RCg-47-26b" firstAttribute="top" secondItem="g83-eY-3Zp" secondAttribute="top" constant="10" id="R58-ON-5Q3"/>
+                            <constraint firstItem="xlt-Yn-Tlf" firstAttribute="top" secondItem="bkc-Wq-I8v" secondAttribute="bottom" constant="23" id="RXG-yb-kuB"/>
+                            <constraint firstItem="lau-ei-Qbl" firstAttribute="leading" secondItem="g83-eY-3Zp" secondAttribute="leading" constant="16" id="Tdf-dW-Nkd"/>
+                            <constraint firstItem="6uY-PC-Sfp" firstAttribute="centerX" secondItem="vbu-Nj-87C" secondAttribute="centerX" id="c2x-BU-dGo"/>
+                            <constraint firstItem="6uY-PC-Sfp" firstAttribute="top" secondItem="lau-ei-Qbl" secondAttribute="bottom" constant="23" id="cqr-XJ-ess"/>
+                            <constraint firstItem="g83-eY-3Zp" firstAttribute="trailing" secondItem="lau-ei-Qbl" secondAttribute="trailing" constant="16" id="fv1-W1-NRd"/>
+                            <constraint firstItem="7YO-M2-TTG" firstAttribute="leading" secondItem="g83-eY-3Zp" secondAttribute="leading" constant="16" id="h9R-dT-jOY"/>
+                            <constraint firstItem="66K-DH-RVL" firstAttribute="centerX" secondItem="vbu-Nj-87C" secondAttribute="centerX" id="o2A-NV-UCX"/>
+                            <constraint firstItem="bkc-Wq-I8v" firstAttribute="leading" secondItem="g83-eY-3Zp" secondAttribute="leading" constant="16" id="qR1-Ag-mSg"/>
+                            <constraint firstItem="xlt-Yn-Tlf" firstAttribute="centerX" secondItem="vbu-Nj-87C" secondAttribute="centerX" id="s5D-ez-Yhf"/>
+                            <constraint firstItem="bkc-Wq-I8v" firstAttribute="top" secondItem="66K-DH-RVL" secondAttribute="bottom" constant="4" id="zM6-aQ-8pc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g83-eY-3Zp"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CryptoATM" id="UBV-D5-w55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mg5-WL-apa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1469.5999999999999" y="727.28635682158927"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.51188321699999995" green="0.1385686756" blue="0.73364387310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dVV-dU-A74" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="Xl3-Ip-DA5" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="FBc-3S-gJ4" kind="relationship" relationship="viewControllers" id="Pjg-qZ-HJI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7" y="0.0"/>
+        </scene>
+        <!--ATMs-->
+        <scene sceneID="D2v-yh-TwF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dVV-dU-A74" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="ATMs" image="first" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="aEe-yH-yzK">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="WMf-0D-ma9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fG7-nn-GZ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748.79999999999995" y="-729.53523238380819"/>
+        </scene>
+        <!--Markets-->
+        <scene sceneID="DLr-hn-hLJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xl3-Ip-DA5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Markets" image="second" id="cPa-gy-q4n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Ouv-em-fkm">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="vhB-m2-CCG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aXu-ey-1bM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748.79999999999995" y="0.0"/>
+        </scene>
+        <!--Extras-->
+        <scene sceneID="O8m-4q-9aY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FBc-3S-gJ4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Extras" image="third" id="JQA-OL-JmO"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Jis-E4-PHD">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nBy-mk-7nC" kind="relationship" relationship="rootViewController" id="DtN-Nb-SqD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jVm-de-0nP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748.79999999999995" y="728.63568215892064"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="32" height="32"/>
+        <image name="second" width="32" height="32"/>
+        <image name="third" width="32" height="32"/>
+    </resources>
+    <color key="tintColor" red="0.51188321704160733" green="0.13856867558289693" blue="0.73364387308885604" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>

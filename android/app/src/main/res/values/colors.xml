@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#520F80</color>
+    <color name="colorPrimaryDark">#2F034D</color>
+    <color name="colorAccent">#81B40B</color>
+
+    <color name="black_">#ff000000</color>
+    <color name="black_overlay">#8000</color>
+    <color name="black_overlay_dark">#BF000000</color>
+
+    <color name="white_">#ffffffff</color>
+    <color name="white_accent">#EDEDED</color>
+    <color name="white_bg">#F2F2F2</color>
+    <color name="white_overlay">#26FFFFFF</color>
+    <color name="menu_white_overlay">#66FFFFFF</color>
+    <color name="nav_white_overlay">#1AFFFFFF</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="background">#303030</color>
+    <color name="card_background">#424242</color>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Crypto</string>
+    <string name="map_style"></string>
+    <string name="access_token"></string>
+    <string name="server"></string>
+    <string name="app_id"></string>
+    <string name="client_key"></string>
+    <string name="font">fonts/Oswald-ExtraLight.ttf</string>
+    <string name="extralink">cartoaware</string>
+    <string name="btc_wallet">1LzfAMnWLYikHx8d9UCWbLzxdkX4dHzZji</string>
+    <string name="eth_wallet">0xD2bc3fe8429d56fE17e5c1487c10B79780156823</string>
+    <string name="ltc_wallet">LagaHBXdHL6yh9GqvfxjRVmSoraDnThk82</string>
+</resources>

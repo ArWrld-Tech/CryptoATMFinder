@@ -1,0 +1,59 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+
+    dependencies {
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.cartoaware.cryptoatm"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "0.0.1"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:cardview-v7:26.1.0'
+    compile 'com.google.android.gms:play-services-location:11.6.2'
+    compile('io.nlopez.smartlocation:library:3.3.1') {
+        exclude group: 'com.google.android.gms'
+        transitive = true
+    }
+    compile('com.mapbox.mapboxsdk:mapbox-android-sdk:5.1.2@aar') {
+        transitive = true
+        exclude group: 'org.apache.commons'
+    }
+    compile 'com.parse:parse-android:1.16.3'
+    compile 'com.parse:parse-livequery-android:1.0.4'
+    compile 'com.google.code.gson:gson:2.8.1'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.pixplicity.easyprefs:library:+'
+    compile 'com.getbase:floatingactionbutton:1.10.1'
+    compile 'com.github.devlight.navigationtabstrip:navigationtabstrip:+'
+    compile 'uk.co.chrisjenx:calligraphy:2.3.0'
+    compile 'com.github.bumptech.glide:glide:4.2.0'
+    compile 'com.airbnb.android:lottie:2.2.1'
+    compile 'com.github.hotchemi:permissionsdispatcher:2.2.1'
+    apt 'com.github.hotchemi:permissionsdispatcher-processor:2.2.1'
+}

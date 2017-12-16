@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="tabs">
+        <item>Markets</item>
+        <item>ATMs</item>
+        <item>Extras</item>
+    </array>
+</resources>
